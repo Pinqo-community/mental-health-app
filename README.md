@@ -1,2 +1,2 @@
-# app-sante-mentale
-Application de suivi de santé mentale
+# mental-health-app
+Mental health tracking app
