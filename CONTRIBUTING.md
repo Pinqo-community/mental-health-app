@@ -14,19 +14,22 @@ Thank you for your interest in contributing to Mental Health App! We appreciate 
 
 ## Getting Started
 
-1. **Clone the Repository**: Since we're a small team, all contributors are added directly to the main repository, so there's no need to fork it.
+1. **Fork the Repository** (if applicable): If you're contributing as an external contributor, please fork the repository. If you're part of our core team, you can work directly on the main repository.
+
+2. **Clone the Repo**: Clone your fork (or the main repo) to your local machine.
 ```bash
 git clone https://github.com/Pinqo-community/mental-health-app.git
 cd mental-health-app
 ```
-2. **Create a Branch**: Create a new branch for each feature or bug fix.
+3. **Create a Branch**: Create a new branch for each feature or bug fix.
 ```bash
 git checkout -b feature/your-feature-name
 ```
-3. **Make Changes**: Implement your feature or bug fix.
-4. **Commit your Changes**: Commit your changes with a clear and meaningful message.
+4. **Make Changes**: Implement your feature or bug fix.
+
+5. **Commit your Changes**: Commit your changes with a clear and meaningful message. Please follow the conventional commit suffixe guidelines [here](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13).
 ```bash
-git commit -m "Add a brief description of your changes"
+git commit -m "feat(feature-name): Add a brief description of your changes"
 ```
 
 ## How to Contribute
@@ -37,7 +40,7 @@ git push origin feature/your-feature-name
 ```
 - In your PR description, include a brief summary of your changes and reference any related issues (e.g., Fixes #123).
 
-2. **Code Review**: Your PR will be reviewed by one or more team members. Be open to feedback and make any necessary changes. Once approved, your PR will be merged into the `develop` branch.
+2. **Code Review**: Your PR will be reviewed by two or more team members. Be open to feedback and make any necessary changes. Once approved, your PR will be merged into the `develop` branch.
 
 3. **Stay Updated**: Regularly pull the latest changes from the `develop` branch to keep your feature branch up to date.
 ```bash
