@@ -43,8 +43,23 @@ git checkout feature/your-feature-name
 git rebase develop
 ```
 
-## Code of conduct
-[TODO]
+## Code of Conduct
+We are committed to fostering a welcoming and inclusive community. We expect all contributors to adhere to our Code od Conduct :
+- Be respectful and inclusive of differing viewpoints, and experiences.
+- Use welcoming and inclusive language.
+- Gracefully accept constructive criticism.
+- Focus on what is best for the community and the users of our mental health app.
+- Show courtesy, empathy and respect towards other community members.
+
+Unacceptable behavior includes :
+- The use of sexualized language or imagery and unwelcome sexual attention or advances.
+- Trolling, insulting comments, and personal or political attacks.
+- Public or private harassment.
+- Publishing others private information without explicit permission.
+- Other conduct which could reasonably be considered inappropriate in a professional setting.
+
+Violations of this Code of Conduct may result in removal from the project community.
+To report violations, please contact [ i don't know who yet ].
 
 ## Additional Resources
 [TODO]
