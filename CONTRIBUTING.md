@@ -6,6 +6,7 @@ Thank you for your interest in contributing to Mental Health App! We appreciate 
 - [Getting Started](#getting-started)
 - [How to Contribute](#how-to-contribute)
 - [Code of Conduct](#code-of-conduct)
+- [Project Structure](#project-structure)
 - [Additional Resources](#additional-resources)
 
 ## Getting Started
@@ -46,7 +47,38 @@ git rebase develop
 ## Code of conduct
 [TODO]
 
+## Project Structure
+Our Mental Health App can be structured as follows :
+mental-health-app/
+├── src/
+|    ├── components/
+|    ├── screens/
+|    ├── services/
+|    ├── utils/
+|    └── App.js
+├── tests/
+├── docs/
+├── assets/
+└── config/
+
+- `src/` : Contains the main source code
+- `components/` : Reusable UI components
+- `screens/` : Individual app screens
+- `services/` : API and backend services
+- `utils/` : Utility functions and helpers
+- `tests/` : Unit and integration tests
+- `docs/` : Project documentation
+- `assets/` : Images, fonts, and other static assets
+- `config/` : Configuration files
+
+
+
 ## Additional Resources
-[TODO]
+- [stack documentation]
+  (https://nextjs.org/docs)
+  [others to be confirmed]
+  
+- [Jest testing Framework]
+  (https://jestjs.io/docs/getting-started)
 
 Thank you for contributing to Mental Health App! We look forward to your contributions.
