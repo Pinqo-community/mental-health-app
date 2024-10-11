@@ -27,9 +27,9 @@ git checkout -b feature/your-feature-name
 ```
 4. **Make Changes**: Implement your feature or bug fix.
 
-5. **Commit your Changes**: Commit your changes with a clear and meaningful message. Please follow the conventional commit suffixe guidelines [here](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13).
+5. **Commit your Changes**: Commit your changes with a clear and meaningful message. Please follow the conventional commit prefixes guidelines [here](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13).
 ```bash
-git commit -m "feat(feature-name): Add a brief description of your changes"
+git commit -m "Add a brief description of your changes"
 ```
 
 ## How to Contribute
