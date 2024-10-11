@@ -93,6 +93,11 @@ git merge hotfix/issue-description
 [TODO]
 
 ## Additional Resources
-[TODO]
+- [stack documentation]
+  (https://nextjs.org/docs)
+  [others to be confirmed]
+  
+- [Jest testing Framework]
+  (https://jestjs.io/docs/getting-started)
 
 Thank you for contributing to Mental Health App! We look forward to your contributions.
