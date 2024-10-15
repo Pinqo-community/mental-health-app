@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# mental-health-app
+Mental health tracking app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## OVERVIEW
+This free application is designed to help users track their mental health and access useful resources.
 
-Currently, two official plugins are available:
+## KEY FEATURES
+- Mood and symptom tracking
+- Goal setting
+- Connection with trusted individuals (friends, mental health professionals)
+- Access to mental health resources and information
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technology stack
+- [ to be defined ]
 
-## Expanding the ESLint configuration
+## Getting started
+[]
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## License 
+[]
 
-- Configure the top-level `parserOptions` property like this:
+## About
+This application aims to facilitate openness about mental health and to obtain support from one's trusted network. 
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## WARNING 
+It is not a substitute for professional care.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- - -
+
+Note : This is a temporary README. More details on installation, usage, and deployment will be added as the project develops.
