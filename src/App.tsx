@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <h1>Equilibre</h1>
+      <h1 className="text-4xl font-bold">Equilibre</h1>
       {/* Form */}
       {/* h2 select a mood */}
       {/* Moods récents */}
