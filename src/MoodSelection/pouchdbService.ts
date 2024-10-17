@@ -72,3 +72,6 @@ export const updateMood = async (mood: Mood): Promise<Mood> => {
 
 // Todo: fullDeleteMoodFromDb() ou purgeMoodFromDb()
 // Todo: deleteDbFromDevice()
+export const deleteDbFromDevice = async () => {
+  await moods_db.destroy();
+};
