@@ -11,28 +11,18 @@ auto-compaction:true 'compacte' automatiquement la db (ne sauvegarde pas tous le
 La propriété est attribuée à la CREATION de la db. 
 */
 
-/* const remoteCouch = false; */ // Reste en commentaire si pas de synchro avec Couch
-
-export const addMoodToDb = async (mood: Mood): Promise<Mood> => {
-  const savedMood: Mood = {
-    _id: mood.createdAt,
-    description: mood.description,
-    number: mood.number,
-    createdAt: mood.createdAt,
-  };
-  /* const savedMood = { ...mood, _id: mood.createdAt }; */
+export const addMood = async (mood: Mood): Promise<Mood> => {
   try {
-    const response = await moods_db.put({ ...savedMood });
-    const updatedMood: Mood = { ...mood, _rev: response.rev };
+    const response = await moods_db.put({ ...mood, _id: mood.createdAt });
     console.log("Mood posted!", response);
-    return updatedMood;
+    return { ...mood, _rev: response.rev };
   } catch (err) {
     console.error("Error posting mood to PouchDB", err);
     throw err;
   }
 };
 
-export const fetchMoodsFromDb = async (): Promise<Mood[]> => {
+export const fetchMoods = async (): Promise<Mood[]> => {
   try {
     // descending? : trie les notes dans l'ordre descendant si voulu
     /* Pour fetch un certain nombre de moods (par exemple 5), possibilité d'ajouter limit:5 */
@@ -47,7 +37,7 @@ export const fetchMoodsFromDb = async (): Promise<Mood[]> => {
 // Soft-delete. Pour du full delete utiliser purge: https://pouchdb.com/api.html#purge
 /* "Purge permanently removes data from the database. Normal deletion with db.remove() does not, 
 it only marks the document as _deleted=true and creates a new revision."" */
-export const softDeleteMoodFromDb = async (id: string) => {
+export const softDeleteMood = async (id: string) => {
   try {
     const mood = await moods_db.get(id);
 
@@ -59,7 +49,7 @@ export const softDeleteMoodFromDb = async (id: string) => {
   }
 };
 
-export const updateMoodInDb = async (mood: Mood): Promise<Mood> => {
+export const updateMood = async (mood: Mood): Promise<Mood> => {
   try {
     // Récupere le mood à modifier avec son _id existant
     const moodToUpdate = await moods_db.get(mood._id);
